@@ -1,9 +1,8 @@
 from LLM import generate_response_openai
 from yolo_pred import test_trained_model
-import streamlit
 
-best_model_path = "/home/kriti/projects/week-3/runs/classify/pcb_defects_v1/weights/best.pt"
-input_image_path = "/home/kriti/projects/week-3/images_split/val/Mouse_bite/01_mouse_bite_07.jpg"
+
+best_model_path = "/runs/classify/pcb_defects_v1/weights/best.pt"
 
 def get_result(image_path):
 
@@ -16,4 +15,3 @@ def get_result(image_path):
     return response.choices[0].message.content
 
 
-print(get_result(input_image_path))
