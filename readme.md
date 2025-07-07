@@ -15,7 +15,7 @@ A lightweight pipeline combining computer vision with large language model (LLM)
    Passes the predicted defect class and score to an LLM (via `generate_response_openai`) that generates a concise, factual caption describing the defect.
 
 ---
-### 🧩 Project Structure
+## 🧩 Project Structure
 pcb-defect_classification_with-llm_captioning/
 ├── pipeline.py              # Orchestrates classification + captioning
 ├── LLM.py                   # Handles LLM API interaction
