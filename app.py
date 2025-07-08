@@ -14,7 +14,7 @@ uploaded_file = st.file_uploader("Upload a PCB image", type=["jpg", "jpeg", "png
 
 if uploaded_file:
     
-    best_model_path = "/home/kriti/projects/week-3/runs/classify/pcb_defects_v1/weights/best.pt"
+    best_model_path = "/runs/classify/pcb_defects_v1/weights/best.pt"
 
 
     b64_img = resize_and_convert_to_base64(uploaded_file, max_width=512)
